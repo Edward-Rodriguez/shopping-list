@@ -4,4 +4,4 @@ Section 12: DOM Manipulation
 https://www.udemy.com/course/the-complete-web-developer-zero-to-mastery  
 129. Exercise: DOM Events  
 
-See the result here
+See the result [here](https://www.google.com "Shopping List")
