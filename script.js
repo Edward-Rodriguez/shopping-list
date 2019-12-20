@@ -1,32 +1,12 @@
-// // DOM Selectors
-// --------------
-// getElementsByTagName()
-// getElementsByClassName
-// getElementById
-
-// querySelector
-// querySelectorAll
-
-// getAttribute
-// setAttribute
-
-// ##Changing Styles
-// style.{property} //ok
-
-// className //best
-// classList //best
-
-// classList.add
-// classList.remove
-// classList.toggle
-
-// ##Bonus
-// innerHTML //DANGEROUS
-
-// parentElement
-// children
-
-// ##It is important to CACHE selectors in variables
+/**
+ * Simple shopping list.
+ *
+ * Add, delete, strike-through items on a list.done
+ *
+ * @link  https://edward-rodriguez.github.io/shopping-list/
+ * @author Edward Rodriguez
+ * @since 12/20/19
+ * */
 
 var div = document.querySelector('div');
 var input = document.getElementById('userInput');
@@ -50,19 +30,6 @@ const attributes = {
   alt: 'Delete',
   src: deleteImage
 };
-
-//  Changing class names of an element example
-div.classList.add('hit-the-floor');
-
-//  output 'click' on button click
-button.addEventListener('click', function() {
-  console.log('click');
-});
-
-//  output 'enter' on mouse entering button
-button.addEventListener('mouseenter', function() {
-  console.log('enter');
-});
 
 function removeWhiteSpace(text) {
   //  regex for removing whitespace
@@ -90,6 +57,7 @@ function setAttributes(element) {
 }
 
 //  create a list element under ul with a delete button and new item
+//  add attributes/event listeners to new delete button
 function createListElement(item) {
   var li = document.createElement('li');
   var deleteButton = document.createElement('input');
@@ -156,7 +124,4 @@ deleteButtons.forEach(button => {
   button.addEventListener('mouseenter', toggleTrashImage);
   button.addEventListener('mouseleave', toggleTrashImage);
 });
-
-// listener to change trash can to red on hover
-
 /******************** END OF EVENT LISTENERS *************************/
