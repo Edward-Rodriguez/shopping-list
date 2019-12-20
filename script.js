@@ -95,6 +95,7 @@ function createListElement(item) {
   var deleteButton = document.createElement('input');
   deleteButton.addEventListener('click', deleteItem);
   deleteButton.addEventListener('mouseenter', toggleTrashImage);
+  deleteButton.addEventListener('mouseleave', toggleTrashImage);
   setAttributes(deleteButton);
   li.appendChild(deleteButton);
   li.appendChild(document.createTextNode(item));
