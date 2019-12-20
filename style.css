@@ -46,3 +46,16 @@ body {
 .done {
   text-decoration: line-through;
 }
+
+li {
+  height: 30px;
+}
+
+input[name='delete'] {
+  vertical-align: bottom;
+  margin-right: 5px;
+}
+
+li:hover {
+  cursor: pointer;
+}
